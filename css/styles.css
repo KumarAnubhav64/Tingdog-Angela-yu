@@ -1,6 +1,7 @@
 #title{
     background-color: #ff4c68;
     padding:  3% 15%;
+    z-index: 2;
 
 }
 
@@ -29,9 +30,9 @@
     color: white;
     margin-bottom: 40px;
 }
-/* .iphone_dwg{
+.iphone_dwg{
     transform: rotate(25deg);
-} */
+}
 .link{
     font-size: larger;
 }
@@ -44,7 +45,10 @@
     margin: 5% 4% 5% 0
 }
 .iphone_dwg{
-    width: 300px;
+    position: absolute;
+    top: 200px;
+    z-index: 0;
+    max-width: 300px;
     transform: rotate(30deg);
 
 }
@@ -52,6 +56,9 @@
 #features{
     padding: 7% 15% ;
     background-color: white;
+    z-index: 2;
+    position: relative;
+    bottom: 10px;
 
 }
 .features{
@@ -134,9 +141,14 @@ h3{
 /* cta */
 #cta{
     background-color: #ff4c68;
-    padding: 5%;
-    padding-bottom: 0%;
+    padding: 7% 15%;
+
     text-align: center;
+}
+.end{
+    font-size: 4.5rem; 
+    text-align: center; 
+    color: white;
 }
 /* footer */
 #footer{
@@ -153,4 +165,21 @@ h3{
 }
 .colour{
     color: #b87474;  
+}
+@media (max-width:1228px){
+    .iphone_dwg{
+        position:static;
+       transform: rotate(0);
+       margin: 0px 40px;
+       width: 100%;
+    }
+    #title{
+        text-align: center;
+    }
+    .end{
+        font-size: 2.5rem;
+    }
+    .test{
+        font-size: 2rem;
+    }
 }
